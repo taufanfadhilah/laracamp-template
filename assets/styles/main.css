@@ -1,8 +1,159 @@
-.btn-master, .btn-primary, .btn-secondary {
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.pl-150 {
+  padding-left: 150px;
+}
+
+.copyright {
+  padding: 70px 0 0 0;
+}
+
+.copyright p {
+  text-align: center;
+  font-weight: 400;
+  color: #6F6A86;
+}
+
+.testimonials {
+  background: #F7F7FB;
+  margin-top: 370px;
+  padding: 70px 0 70px 0;
+}
+
+.testimonials .item-review {
+  border-radius: 13px;
+  background: #fff;
+  padding: 20px;
+}
+
+.testimonials .item-review .message, .testimonials .item-review .user .info .role {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5B5575;
+  line-height: 30px;
+  min-height: 90px;
+  margin-top: 30px;
+}
+
+.testimonials .item-review .user {
+  margin-top: 30px;
+}
+
+.testimonials .item-review .user .photo {
+  width: 56px;
+  height: 56px;
+  float: left;
+  margin-right: 16px;
+}
+
+.testimonials .item-review .user .info {
+  padding-top: 5px;
+}
+
+.testimonials .item-review .user .info .name {
+  color: #211B3D;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.testimonials .item-review .user .info .role {
+  min-height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.pricing {
+  margin-top: 100px;
+  background: #4D1DAB;
+  padding-top: 70px;
+  max-height: 620px;
+}
+
+.pricing .copywriting {
+  margin-top: 80px;
+}
+
+.pricing .support {
+  font-size: 16px;
+  font-weight: 400;
+  color: #CBB0FF;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.pricing .table-pricing {
+  background: #fff;
+  border-radius: 40px;
+  padding: 30px;
+  border: 1px solid #EAE8F5;
+}
+
+.pricing .table-pricing .price {
+  font-size: 42px;
+  font-weight: 600;
+  color: #211B3D;
+  margin-bottom: 20px;
+}
+
+.pricing .table-pricing .item-benefit-pricing img {
+  float: left;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+
+.pricing .table-pricing .item-benefit-pricing p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #211B3D;
+}
+
+.pricing .table-pricing .item-benefit-pricing .divider {
+  height: 1px;
+  width: 100%;
+  background: #E7E5F4;
+}
+
+.pricing .paket-gila {
+  min-height: 697px;
+}
+
+.pricing .paket-biasa {
+  min-height: 453px;
+}
+
+.clear {
+  clear: both;
+}
+
+.steps .item-step .cover {
+  height: 497px;
+}
+
+.steps .item-step .copywriting {
+  padding-top: 100px;
+}
+
+.steps .item-step .support {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5B5575;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.btn-master, .btn-thirdty, .btn-primary, .btn-secondary {
   padding: 11px 36px 11px 36px;
   border-radius: 100px;
   border: 0;
   font-weight: 500;
+}
+
+.btn-thirdty {
+  background: #31B380;
+  color: #fff;
 }
 
 .btn-primary {
@@ -42,7 +193,7 @@
   font-size: 16px;
   font-weight: 400;
   color: #5B5575;
-  line-height: 26px;
+  line-height: 30px;
 }
 
 .pb-70 {
@@ -61,10 +212,13 @@
   color: #7839F3;
 }
 
+.text-white {
+  color: #fff !important;
+}
+
 .btn-secondary {
   background: #F5EFFF;
   color: #7839F3;
-  border: 2px solid #ECE3FE;
 }
 
 .banner {

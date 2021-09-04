@@ -1,16 +1,162 @@
 $purple: #7839F3;
 $sofpurple: #ECE3FE;
 $darpurple: #F5EFFF;
+$darkpurple: #4D1DAB;
 $white: #fff;
 $black: #211B3D;
 $green: #31B380;
 $lildarpurple: #5B5575;
+$brpurple: #CBB0FF;
+$newpurple: #E7E5F4;
+$graypurple: #EAE8F5;
+$darkwhite: #F7F7FB;
+$graypurplenew: #6F6A86;
 $font-weights: ("light": 300, "regular": 400, "medium": 500, "semibold": 600);
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.pl-150 {
+    padding-left: 150px;
+}
+
+.copyright {
+    padding: 70px 0 0 0;
+    p {
+        text-align: center;
+        font-weight: map-get($font-weights, regular);
+        color: $graypurplenew;
+    }
+}
+
+.testimonials {
+    background: $darkwhite;
+    margin-top: 370px;
+    padding: 70px 0 70px 0;
+    .item-review {
+        border-radius: 13px;
+        background: $white;
+        padding: 20px;
+        .message {
+            font-size: 16px;
+            font-weight: map-get($font-weights, regular);
+            color: $lildarpurple;
+            line-height: 30px;
+            min-height: 90px;
+            margin-top: 30px;
+        }
+        .user {
+            margin-top: 30px;
+            .photo {
+                width: 56px;
+                height: 56px;
+                float: left;
+                margin-right: 16px;
+            }
+            .info {
+                padding-top: 5px;
+                .name {
+                    color: $black;
+                    font-weight: map-get($font-weights, medium);
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
+                .role {
+                    @extend .message;
+                    min-height: 0;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.pricing {
+    margin-top: 100px;
+    background: $darkpurple;
+    padding-top: 70px;
+    max-height: 620px;
+    .copywriting {
+        margin-top: 80px;
+    }
+    .support {
+        font-size: 16px;
+        font-weight: map-get($font-weights, regular);
+        color: $brpurple;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+    .table-pricing {
+        background: $white;
+        border-radius: 40px;
+        padding: 30px;
+        border: 1px solid $graypurple;
+        .price {
+            font-size: 42px;
+            font-weight: map-get($font-weights, semibold);
+            color: $black;
+            margin-bottom: 20px;
+        }
+        .item-benefit-pricing {
+            img {
+                float: left;
+                margin-right: 8px;
+                margin-top: 2px;
+            }
+            p {
+                font-size: 16px;
+                font-weight: map-get($font-weights, medium);
+                color: $black;
+            }
+            .divider {
+                height: 1px;
+                width: 100%;
+                background: $newpurple;
+            }
+        }
+    }
+    .paket-gila {
+        min-height: 697px;
+    }
+    .paket-biasa {
+        min-height: 453px;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+.steps {
+    .item-step {
+        .cover {
+            height: 497px;
+        }
+        .copywriting {
+            padding-top: 100px;
+        }
+        .support {
+            font-size: 16px;
+            font-weight: map-get($font-weights, regular);
+            color: $lildarpurple;
+            line-height: 30px;
+            margin-top: 30px;
+        }
+    }
+}
+
 .btn-master {
     padding: 11px 36px 11px 36px;
     border-radius: 100px;
     border: 0;
     font-weight: map-get($font-weights, medium);
+}
+
+.btn-thirdty {
+    @extend .btn-master;
+    background: $green;
+    color: $white;
 }
 
 .btn-primary {
@@ -48,7 +194,7 @@ $font-weights: ("light": 300, "regular": 400, "medium": 500, "semibold": 600);
             font-size: 16px;
             font-weight: map-get($font-weights, regular);
             color: $lildarpurple;
-            line-height: 26px;
+            line-height: 30px;
         }
     }
 }
@@ -70,11 +216,14 @@ $font-weights: ("light": 300, "regular": 400, "medium": 500, "semibold": 600);
     color: $purple;
 }
 
+.text-white {
+    color: $white !important;
+}
+
 .btn-secondary {
     @extend .btn-master;
     background: $darpurple;
     color: $purple;
-    border: 2px solid $sofpurple;
 }
 
 .banner {
